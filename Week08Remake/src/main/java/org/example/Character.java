@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class Character {
+abstract class Character {
     protected String name;
     protected int health;
     protected int attackPower;
@@ -31,5 +31,21 @@ public abstract class Character {
 
     public void complexMethodExample() {
 
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getAttackPower() {
+        return attackPower;
+    }
+
+    public void setAttackPower(int attackPower) {
+        this.attackPower = attackPower;
     }
 }

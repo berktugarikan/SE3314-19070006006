@@ -3,9 +3,6 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Game {
     private List<Character> characters = new ArrayList<>();
 
@@ -13,13 +10,14 @@ public class Game {
         characters.add(character);
     }
 
-    public void StartGame() {
+    //StartGame -> startGame
+    public void startGame() {
         int turn = 0; boolean gameOver = false; // Violates EmptyLineSeparator
         while (!gameOver) {
             Character attacker = characters.get(turn % characters.size());
             Character defender = characters.get((turn + 1) % characters.size());
 
-            attacker.special_Attack(defender); //Changed specialAttack's name
+            attacker.special_Attack(defender);
             System.out.println(attacker.getName() + " attacks " + defender.getName());
 
             if (defender.isDefeated()) {

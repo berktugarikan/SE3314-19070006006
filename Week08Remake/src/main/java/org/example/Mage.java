@@ -9,6 +9,4 @@ public class Mage extends Character {
     public void special_Attack(Character Opponent) {
         Opponent.takeDamage(attackPower + 50);
     }
-
-
 }
