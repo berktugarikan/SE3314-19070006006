@@ -7,7 +7,7 @@ package org.example;
 public class App {
     public static void main(String[] args) {
         LoopControl loopControl = new LoopControl();
-        ExampleUsage exampleUsage = new ExampleUsage();
+        //ExampleUsage exampleUsage = new ExampleUsage(); -> 28. Line because of VariableDeclarationUsageDistance.
 
         // Displaying the correct and incorrect variable usage
         System.out.println("Demonstrating correct variable usage:");
@@ -25,6 +25,8 @@ public class App {
         System.out.println("\nDemonstrating incorrectly modified control variable:");
         loopControl.modifiedControlVariable();
 
+
+        ExampleUsage exampleUsage = new ExampleUsage();
         // Using ExampleUsage class to show practical uses of loops
         System.out.println("\nDisplaying even numbers:");
         exampleUsage.displayEvenNumbers();
@@ -37,5 +39,17 @@ public class App {
         // Processing a matrix
         System.out.println("\nProcessing a matrix:");
         exampleUsage.processMatrix();
+
+        System.out.println();
+        loopControl.sumOfSquares();
+        System.out.println("\nTriangle:");
+        loopControl.printTriangle();
+        System.out.println();
+        loopControl.modifyIndexIncorrectly();
+
+        System.out.println();
+        exampleUsage.filterAndCountEvenNumbers();
+        System.out.println();
+        exampleUsage.matrixDiagonalSum();
     }
 }

@@ -34,9 +34,9 @@ public class LoopControl {
     }
 
     public void correctVariableUsage() {
-        int index; // Declare the variable here
+        // int index; // Declare the variable here
         System.out.println("Preparing to loop...");
-        for (index = 0; index < 5; index++) { // Initialize the variable at the start of the loop
+        for (int index = 0; index < 5; index++) { // Initialize the variable at the start of the loop
             System.out.println(index);
         }
     }
